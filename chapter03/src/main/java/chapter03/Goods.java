@@ -16,6 +16,9 @@ public class Goods {
 		return price;
 	}
 	public void setPrice(int price) {
+		if(price < 0) {
+			return;
+		}
 		this.price = price;
 	}
 	public String getName() {

@@ -8,6 +8,8 @@ public class GoodsApp {
 		goods.setCountStock(10);
 		goods.setCountSold(20);
 		goods.showInfo();
+		
+		goods.setPrice(-1);
 		int discountPrice = goods.calcDiscountPrice(50);
 		System.out.println(discountPrice);
 		
