@@ -24,7 +24,5 @@ public class WatchTV {
 
         tv.power( false );
         tv.status();      	
-
 	}
-
 }
