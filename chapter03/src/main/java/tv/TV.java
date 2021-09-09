@@ -16,7 +16,12 @@ public class TV {
 	}
 	
 	public void channel(boolean up) {
-		channel(channel + (up ? 1 : -1));
+		// channel(channel + (up ? 1 : -1));
+		if(up) {
+			channel(channel + 1);
+		} else {
+			channel(channel - 1);
+		}
 	}
 
 	public void channel(int channel) {

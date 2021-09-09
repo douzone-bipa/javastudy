@@ -9,10 +9,24 @@ public class Main {
 		drawPoint(point1);
 		// point1.disapear();
 		point1.show(false);
+		
+		Point point2 = new ColorPoint();
+		point2.setX(100);
+		point2.setY(200);
+		((ColorPoint)point2).setColor("red");
+		drawPoint(point2);
+		
+		point2.show(false);
+		point2.show(true);
+		
 	}
 	
 	public static void drawPoint(Point point) {
 		point.show();
 	}
 
+//	public static void drawColorPoint(ColorPoint colorPoint) {
+//		colorPoint.show();
+//	}
+	
 }
