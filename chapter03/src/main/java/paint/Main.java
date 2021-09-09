@@ -19,6 +19,14 @@ public class Main {
 		point2.show(false);
 		point2.show(true);
 		
+		Triangle triangle = new Triangle();
+		drawTriangle(triangle);
+		
+		Rectangle rect = new Rectangle();
+		drawRectangle(rect);
+		
+		Circle circle = new Circle();
+		drawCircle(circle);
 	}
 	
 	public static void drawPoint(Point point) {
@@ -28,5 +36,17 @@ public class Main {
 //	public static void drawColorPoint(ColorPoint colorPoint) {
 //		colorPoint.show();
 //	}
+	
+	public static void drawTriangle(Triangle triangle) {
+		triangle.draw();
+	}
+	
+	public static void drawRectangle(Rectangle rectangle) {
+		rectangle.draw();
+	}
+
+	public static void drawCircle(Circle circle) {
+		circle.draw();
+	}
 	
 }
