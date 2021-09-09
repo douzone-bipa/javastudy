@@ -25,7 +25,7 @@ public class Main {
 		Rectangle rect = new Rectangle();
 		// drawRectangle(rect);
 		// drawShape(rect);
-		// draw(rect);
+		draw(rect);
 		
 		Circle circle = new Circle();
 		// drawCircle(circle);
