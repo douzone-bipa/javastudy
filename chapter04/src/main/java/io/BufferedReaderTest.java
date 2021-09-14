@@ -31,7 +31,6 @@ public class BufferedReaderTest {
 			System.out.println("File Not Found:" + e);
 		} catch (IOException e) {
 			System.out.println("error:" + e);
-			System.in;
 		} finally {
 			try {
 				if(br != null) {
