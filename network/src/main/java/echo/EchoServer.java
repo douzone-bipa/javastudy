@@ -24,6 +24,11 @@ public class EchoServer {
 			
 			Socket socket = serverSocket.accept();
 			
+			InetSocketAddress inetRemoteSocketAddress = (InetSocketAddress)socket.getRemoteSocketAddress();
+			String remoteHostAddress = inetRemoteSocketAddress.getAddress().getHostAddress();
+			int remoteHostPort = inetRemoteSocketAddress.getPort();
+			log("connected by client[" + remoteHostAddress + ":" + remoteHostPort + "]");
+			
 			try {
 				BufferedReader br = new BufferedReader(new InputStreamReader(socket.getInputStream(), "UTF-8"));
 				PrintWriter pw = new PrintWriter(new OutputStreamWriter(socket.getOutputStream(), "UTF-8"), true);
