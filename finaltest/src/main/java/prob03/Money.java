@@ -1,5 +1,7 @@
 package prob03;
 
+import java.util.Objects;
+
 public class Money {
 	private int amount;
     
@@ -25,10 +27,7 @@ public class Money {
 
 	@Override
 	public int hashCode() {
-		final int prime = 31;
-		int result = 1;
-		result = prime * result + amount;
-		return result;
+		return Objects.hash(amount);
 	}
 
 	@Override
@@ -40,8 +39,6 @@ public class Money {
 		if (getClass() != obj.getClass())
 			return false;
 		Money other = (Money) obj;
-		if (amount != other.amount)
-			return false;
-		return true;
+		return amount == other.amount;
 	}
 }
